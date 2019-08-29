@@ -26,7 +26,7 @@ Body Section
 			Lagos Island, Lagos<br/><br/>
 			 
 			mike@jewelshop.com<br/>
-			﻿Tel +234 802 0973 011<br/>
+			﻿Tel +234 802 9796 658<br/>
 			web:jewelshop.com
 		</h5>
 		</div>

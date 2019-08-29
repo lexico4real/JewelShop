@@ -94,7 +94,7 @@ New Products
   echo '<table><tr>';
   while ( $row = mysqli_fetch_array( $r, MYSQLI_ASSOC ))
   {
-    echo '<td><strong>' . $row['item_name'] .'</strong><br><span style="font-size:smaller">'. $row['item_desc'] . '</span><br><img src='. $row['item_img'].'><br>$' . $row['item_price'] . '<br><a href="added.php?id='.$row['item_id'].'">Add To Cart</a></td>';
+   //To echo out items
   }
   echo '</tr></table>';
   
@@ -102,7 +102,7 @@ New Products
   mysqli_close( $dbc ) ; 
 }
 # Or display message.
-else { echo '<p>There are currently no items in this shop.</p>' ; }
+//else { echo '<p>There are currently no items in this shop.</p>' ; }
 
  ?>
 	<div class="well well-small">
