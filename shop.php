@@ -1,13 +1,13 @@
 <?php
-	$page_title = 'Shop' ; 
+	$page_title = 'Shop' ;
 	$makeActiveShop = 'active';
 	include_once('include/header.html');
 
 	# Open database connection.
 	require ( 'connect_db.php' ) ;
- ?>
-<!-- 
-Body Section 
+?>
+<!--
+Body Section
 -->
 
 
@@ -36,12 +36,12 @@ Body Section
 
 			  <div class="well well-small alert alert-warning cntr">
 				  <h2>50% Discount</h2>
-				  <p> 
+				  <p>
 					 only valid for online order. <br><br><a class="defaultBtn" href="#">Click here </a>
 				  </p>
 			  </div>
 			  <div class="well well-small" ><a href="#"><img src="assets/img/paypal.jpg" alt="payment method paypal"></a></div>
-			
+
 			<a class="shopBtn btn-block" href="#">Upcoming products <br><small>Click to view</small></a>
 			<br>
 			<br>
@@ -83,28 +83,6 @@ Body Section
 New Products
 -->
 
-<?php 
-	# Retrieve items from 'shop' database table.
-	$q = "SELECT * FROM shop" ;
-	$r = mysqli_query( $dbc, $q ) ;
-
-	if ( mysqli_num_rows( $r ) > 0 )
-{
-  # Display body section.
-  echo '<table><tr>';
-  while ( $row = mysqli_fetch_array( $r, MYSQLI_ASSOC ))
-  {
-   //To echo out items
-  }
-  echo '</tr></table>';
-  
-  # Close database connection.
-  mysqli_close( $dbc ) ; 
-}
-# Or display message.
-//else { echo '<p>There are currently no items in this shop.</p>' ; }
-
- ?>
 	<div class="well well-small">
 	<h3>Our Products </h3>
 		<div class="row-fluid">
@@ -115,13 +93,13 @@ New Products
 				<a class="zoomTool" href="product_details.php" title="add to cart"><span class="icon-search"></span> QUICK VIEW</a>
 				<a href="product_details.php"><img src="assets/img/a.jpg" alt=""></a>
 				<div class="caption cntr">
-					<?php echo '<p>'.$row['item_name'].'</p>'; ?>
+					<p>Manicure & Pedicure</p>
 					<p><strong> <?php echo $naira; ?>22.00</strong></p>
 					<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
 					<div class="actionList">
-						<a class="pull-left" href="#">Add to Wish List </a> 
+						<a class="pull-left" href="#">Add to Wish List </a>
 						<a class="pull-left" href="#"> Add to Compare </a>
-					</div> 
+					</div>
 					<br class="clr">
 				</div>
 			  </div>
@@ -136,9 +114,9 @@ New Products
 					<p><strong> <?php echo $naira; ?>22.00</strong></p>
 					<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
 					<div class="actionList">
-						<a class="pull-left" href="#">Add to Wish List </a> 
+						<a class="pull-left" href="#">Add to Wish List </a>
 						<a class="pull-left" href="#"> Add to Compare </a>
-					</div> 
+					</div>
 					<br class="clr">
 				</div>
 			  </div>
@@ -153,9 +131,9 @@ New Products
 					<p><strong> <?php echo $naira; ?>22.00</strong></p>
 					<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
 					<div class="actionList">
-						<a class="pull-left" href="#">Add to Wish List </a> 
+						<a class="pull-left" href="#">Add to Wish List </a>
 						<a class="pull-left" href="#"> Add to Compare </a>
-					</div> 
+					</div>
 					<br class="clr">
 				</div>
 			  </div>
@@ -174,9 +152,9 @@ New Products
 					<p><strong> <?php echo $naira; ?>22.00</strong></p>
 					<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
 					<div class="actionList">
-						<a class="pull-left" href="#">Add to Wish List </a> 
+						<a class="pull-left" href="#">Add to Wish List </a>
 						<a class="pull-left" href="#"> Add to Compare </a>
-					</div> 
+					</div>
 					<br class="clr">
 				</div>
 			  </div>
@@ -191,9 +169,9 @@ New Products
 					<p><strong> <?php echo $naira; ?>22.00</strong></p>
 					<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
 					<div class="actionList">
-						<a class="pull-left" href="#">Add to Wish List </a> 
+						<a class="pull-left" href="#">Add to Wish List </a>
 						<a class="pull-left" href="#"> Add to Compare </a>
-					</div> 
+					</div>
 					<br class="clr">
 				</div>
 			  </div>
@@ -208,9 +186,9 @@ New Products
 					<p><strong> <?php echo $naira; ?>22.00</strong></p>
 					<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
 					<div class="actionList">
-						<a class="pull-left" href="#">Add to Wish List </a> 
+						<a class="pull-left" href="#">Add to Wish List </a>
 						<a class="pull-left" href="#"> Add to Compare </a>
-					</div> 
+					</div>
 					<br class="clr">
 				</div>
 			  </div>
@@ -229,9 +207,9 @@ New Products
 					<p><strong> <?php echo $naira; ?>22.00</strong></p>
 					<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
 					<div class="actionList">
-						<a class="pull-left" href="#">Add to Wish List </a> 
+						<a class="pull-left" href="#">Add to Wish List </a>
 						<a class="pull-left" href="#"> Add to Compare </a>
-					</div> 
+					</div>
 					<br class="clr">
 				</div>
 			  </div>
@@ -246,9 +224,9 @@ New Products
 					<p><strong> <?php echo $naira; ?>22.00</strong></p>
 					<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
 					<div class="actionList">
-						<a class="pull-left" href="#">Add to Wish List </a> 
+						<a class="pull-left" href="#">Add to Wish List </a>
 						<a class="pull-left" href="#"> Add to Compare </a>
-					</div> 
+					</div>
 					<br class="clr">
 				</div>
 			  </div>
@@ -263,9 +241,9 @@ New Products
 					<p><strong> <?php echo $naira; ?>22.00</strong></p>
 					<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
 					<div class="actionList">
-						<a class="pull-left" href="#">Add to Wish List </a> 
+						<a class="pull-left" href="#">Add to Wish List </a>
 						<a class="pull-left" href="#"> Add to Compare </a>
-					</div> 
+					</div>
 					<br class="clr">
 				</div>
 			  </div>
@@ -284,9 +262,9 @@ New Products
 					<p><strong> <?php echo $naira; ?>22.00</strong></p>
 					<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
 					<div class="actionList">
-						<a class="pull-left" href="#">Add to Wish List </a> 
+						<a class="pull-left" href="#">Add to Wish List </a>
 						<a class="pull-left" href="#"> Add to Compare </a>
-					</div> 
+					</div>
 					<br class="clr">
 				</div>
 			  </div>
@@ -301,9 +279,9 @@ New Products
 					<p><strong> <?php echo $naira; ?>22.00</strong></p>
 					<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
 					<div class="actionList">
-						<a class="pull-left" href="#">Add to Wish List </a> 
+						<a class="pull-left" href="#">Add to Wish List </a>
 						<a class="pull-left" href="#"> Add to Compare </a>
-					</div> 
+					</div>
 					<br class="clr">
 				</div>
 			  </div>
@@ -318,21 +296,21 @@ New Products
 					<p><strong> <?php echo $naira; ?>22.00</strong></p>
 					<h4><a class="shopBtn" href="#" title="add to cart"> Add to cart </a></h4>
 					<div class="actionList">
-						<a class="pull-left" href="#">Add to Wish List </a> 
+						<a class="pull-left" href="#">Add to Wish List </a>
 						<a class="pull-left" href="#"> Add to Compare </a>
-					</div> 
+					</div>
 					<br class="clr">
 				</div>
 			  </div>
 			</li>
 		  </ul>
 		</div>
-	
+
 	</div>
 	</div>
 	</div>
-<!-- 
-Clients 
+<!--
+Clients
 -->
 <section class="our_client">
 	<hr class="soften"/>
@@ -360,6 +338,6 @@ Clients
 	</div>
 </section>
 
-<?php 
+<?php
 	require_once('include/footer.html');
- ?>
+?>
